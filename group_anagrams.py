@@ -1,3 +1,11 @@
+"""
+49. Group Anagrams
+given an array of strings, group anagrams together.
+
+key takeaway: use a unique identifier for each group of anagrams, in this case the count for each letter 
+use of alphabet allows us to use a fixed size array of 26, and we can convert the count string as a key for the group 
+
+"""
 class Solution:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
         group_numbers = dict() 

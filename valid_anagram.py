@@ -3,7 +3,7 @@ class Solution:
         if len(s) != len(t):
             return False
         hm1 = dict()
-        hm2 = dict()
+        hm2 = dict()    
         for i in range(len(s)):
             if s[i] not in hm1:
                 hm1[s[i]] = 1
