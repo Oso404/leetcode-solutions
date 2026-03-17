@@ -1,3 +1,9 @@
+"""
+347. Top K Frequent Elements
+given an array of integers, return the k most frequent elements.
+key takeaway: use a dictionary to count the frequency of each element, and then use a list to store the top k elements.
+
+"""
 class Solution:
     def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         kfreq = []  #at  most will have length of k
