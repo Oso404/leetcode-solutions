@@ -7,8 +7,11 @@ anytime we see grids/sub-boxes/group by chunks, we can use integer division to g
 """
 
 
+from collections import defaultdict
+
+
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
+    def isValidSudoku(self, board: list[list[str]]) -> bool:
         c = defaultdict(set) #will be updated until the end 
         r = defaultdict(set) #will be updated after each row iteration
         sq = defaultdict(set) #will be updated throughout 
